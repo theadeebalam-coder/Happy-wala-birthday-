@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Ammi | Sharya Naaz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  background:#f6f1e9;
+  color:#4a3f35;
+  font-family:'Poppins',sans-serif;
+  text-align:center;
+}
+.page{
+  display:none;
+  min-height:100vh;
+  padding:80px 12%;
+}
+.page.active{display:block;}
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:4rem;
+}
+h2{
+  font-family:'Playfair Display',serif;
+  font-size:2.2rem;
+  margin-bottom:20px;
+}
+p{
+  line-height:2.2;
+  font-size:1.1rem;
+  max-width:800px;
+  margin:0 auto 25px;
+}
+.play-btn{
+  display:inline-block;
+  margin-top:30px;
+  background:#6b8f71;
+  color:#fff;
+  padding:14px 40px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:16px;
+}
+.nav{
+  position:fixed;
+  bottom:20px;
+  width:100%;
+}
+button{
+  padding:12px 30px;
+  margin:5px;
+  border:none;
+  border-radius:25px;
+  background:#6b8f71;
+  color:#fff;
+  cursor:pointer;
+}
+footer{
+  margin-top:50px;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active">
+  <h1>Happy Birthday Ammi</h1>
+  <h2>Sharya Naaz</h2>
+  <p>
+    Aaj ka din sirf ek tareekh nahi hai.  
+    Aaj wo din hai jab duniya ko ek maa mili thi —  
+    ek aisi maa jo bina shart pyaar karna jaanti hai,  
+    bina thake dena jaanti hai,  
+    aur bina kuchh maange sab kuchh luta dena jaanti hai.
+  </p>
+  <p>
+    Ammi, aap meri zindagi ki wo kahaani ho  
+    jiska har panna dua se likha gaya hai.  
+    Aapka hona hi meri sabse badi taqat hai.
+  </p>
+
+  <a class="play-btn"
+     href="https://www.youtube.com/watch?v=4zD1R4V7J1s"
+     target="_blank">
+     ▶ Play Song – Tu Kitni Achhi Hai
+  </a>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <h2>A Letter From The Heart</h2>
+  <p>
+    Ammi, aapki har muskaan meri himmat hai.  
+    Jab duniya mushkil lagti hai,  
+    aapki ek awaaz sab kuchh theek kar deti hai.
+  </p>
+  <p>
+    Aapne apni neend chhodi,  
+    apni khushi chhodi,  
+    taaki main chain se jee sakoon.  
+    Ye ehsaan kabhi chukaya nahi ja sakta.
+  </p>
+  <p>
+    Maa hona sirf ek rishta nahi,  
+    maa hona ek poori duniya hoti hai.
+  </p>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+  <h2>Tu Kitni Achhi Hai</h2>
+  <p>
+    Is gaane ka har bol  
+    aap par poori tarah sach baithta hai Ammi.  
+    Kyunki maa jaisi koi nahi hoti.
+  </p>
+  <p>
+    Aap wo roshni ho  
+    jo bina awaaz ke andheron ko mita deti hai.  
+    Aap wo dua ho  
+    jo bina maange qabool ho jaati hai.
+  </p>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+  <h2>Dua 🤍</h2>
+  <p>
+    Ya Allah, meri Ammi Sharya Naaz ko  
+    sehat, sukoon aur lambi umar ata farma.  
+    Unke dil ko kabhi udaas na hone dena.  
+    Unke chehre ki muskaan hamesha barkarar rakhna.
+  </p>
+  <p>
+    Ameen.
+  </p>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page">
+  <h2>Forever My Queen 👑</h2>
+  <p>
+    Aaj bhi, kal bhi,  
+    aur hamesha aap meri duniya rahogi.  
+    Aap meri pehchan ho,  
+    meri rehmat ho,  
+    aur meri zindagi ki sabse khoobsurat sachchai ho.
+  </p>
+
+  <footer>
+    Developed by <strong>Adeeb Alam</strong><br>
+    Date: <strong>07 January 2026</strong>
+  </footer>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <button onclick="move(-1)">⬅ Prev</button>
+  <button onclick="move(1)">Next ➡</button>
+</div>
+
+<script>
+let i = 0;
+const pages = document.querySelectorAll('.page');
+
+function move(step){
+  pages[i].classList.remove('active');
+  i += step;
+  pages[i].classList.add('active');
+}
+</script>
+
+</body>
+</html>
